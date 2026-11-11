@@ -1,12 +1,12 @@
 root {
-    --main-color: darkblue;
+    --main-color: rgb(10, 220, 108);
     --secondary-color: lightblue;
     --accent-color: #f0f0f0;
 }
 
 
 nav {
-    background-color: darkblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 
@@ -18,7 +18,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--main-color);
 }
 
 
