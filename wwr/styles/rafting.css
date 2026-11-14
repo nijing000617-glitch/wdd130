@@ -1,15 +1,13 @@
 :root {
   /* Main brand colors */
   --primary-color: #123B5D;
-  --secondary-color: #168AAD;
 
   /* Adventure accents */
   --accent1-color: #2D6A4F;
   --accent2-color: #F4A261;
 
-  /* Background and text */
+  /* Background */
   --background-color: #F5F7F2;
-  --text-color: #263238;
 
   /* Typography */
   --heading-font: "Montserrat", sans-serif;
@@ -73,12 +71,10 @@ h1 {
   color: #fff; /* white text – make sure there is enough contrast with the background-color */
 }
 
-article {
+.hero article {
   background-color: var(--background-color);
   border: 1px solid var(--accent2-color);
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
+  position: absolute;
 }
 
 .hero article img {
