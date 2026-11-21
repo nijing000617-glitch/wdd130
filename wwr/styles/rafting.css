@@ -1,4 +1,3 @@
-
 :root {
   /* Main brand colors */
   --primary-color: #123B5D;
@@ -25,27 +24,51 @@
 
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
+  color: var(--text-color);
   background-color: var(--background-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
 
+/* Navigation links */
 nav a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+nav a:visited {
+  color: var(--accent1-color);
+}
+
+nav a:hover {
+  color: var(--accent1-color);
+}
+
+nav a:active {
+  color: var(--primary-color);
+}
+
+nav a:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
 }
 
 p {
