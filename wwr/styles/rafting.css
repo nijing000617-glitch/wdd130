@@ -16,31 +16,37 @@
   --body-font: "Open Sans", Arial, sans-serif;
 }
 
+/* Universal selector */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styling */
 body {
   font-family: var(--body-font);
   color: var(--text-color);
   background-color: var(--background-color);
 }
 
+/* Main page layout */
 header,
 main,
 footer {
-  width: 840px;
+  max-width: 840px;
+  width: 100%;
   margin: 0 auto;
 }
 
+/* Heading styles */
 h1,
 h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
+/* Spacing */
 nav,
 p,
 section,
@@ -59,7 +65,7 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: var(--accent1-color);
+  color: var(--secondary-color);
 }
 
 nav a:active {
@@ -71,14 +77,17 @@ nav a:focus-visible {
   outline-offset: 3px;
 }
 
+/* Paragraph styling */
 p {
   color: var(--text-color);
 }
 
+/* Social media links */
 .socialmedia a {
   text-decoration: none;
 }
 
+/* Hero section */
 .hero {
   position: relative;
 }
@@ -89,6 +98,7 @@ p {
   height: auto;
 }
 
+/* Hero heading */
 h1 {
   position: absolute;
   top: 20px;
@@ -100,13 +110,21 @@ h1 {
   color: #fff;
 }
 
+/* Hero article */
 .hero article {
   background-color: var(--background-color);
   border: 1px solid var(--accent2-color);
   position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 16px;
 }
 
+/* Hero article image */
 .hero article img {
   float: right;
   width: 125px;
+  margin-left: 15px;
+  margin-bottom: 10px;
 }
